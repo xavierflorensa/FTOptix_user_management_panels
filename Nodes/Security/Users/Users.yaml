@@ -1,0 +1,18 @@
+Name: Users
+Id: g=8cdfe95c558e909385d4fe7ddc9a2655
+Type: UsersCategoryFolder
+Children:
+- Name: Xavier
+  Id: g=c7edb4a697d097c3a142a35edce15fd8
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=91e3d7b6e4c887213e1652880a600187
+- Name: Victor
+  Id: g=69399e87890a7ce7c415e3ef24cece24
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=2a9510f0c9a1c0ac608d0ed565b8c761

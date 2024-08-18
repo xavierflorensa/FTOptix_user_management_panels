@@ -1,0 +1,11 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: IoT_Data1
+  Type: MicroControllerTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IoT_Data1"
