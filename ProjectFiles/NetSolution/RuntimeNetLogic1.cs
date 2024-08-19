@@ -16,8 +16,12 @@ using FTOptix.CommunicationDriver;
 
 public class RuntimeNetLogic1 : BaseNetLogic
 {
+    PeriodicTask myTask1;
+    
     public override void Start()
     {
+
+       
        
        var navigationPanel = Project.Current.Get<NavigationPanel>("UI/MainWindow/NavigationPanel1");
        
@@ -43,12 +47,14 @@ public class RuntimeNetLogic1 : BaseNetLogic
           
         }
         
-       
+        myTask1 = new PeriodicTask(block_panel_on_logout, 1000, LogicObject);
+        myTask1.Start();
     }
 
     public override void Stop()
     {
         // Insert code to be executed when the user-defined logic is stopped
+        myTask1.Dispose();
     }
     [ExportMethod]
     
@@ -69,7 +75,6 @@ public class RuntimeNetLogic1 : BaseNetLogic
        var user = Session.User.BrowseName;
        var mylabel = Project.Current.Get<Label>("UI/MainWindow/Label2");
        mylabel.Text = user.ToString();
-       //Mostra el grup del usuari
        var navigationPanel = Project.Current.Get<NavigationPanel>("UI/MainWindow/NavigationPanel1");
        //Mostra el grup del usuari
        var userGroups = usuario.Refs.GetObjects(FTOptix.Core.ReferenceTypes.HasGroup, false);
@@ -110,6 +115,15 @@ public class RuntimeNetLogic1 : BaseNetLogic
             }
        
        } 
+    }
+    private void block_panel_on_logout()
+    {
+        var user = Session.User.BrowseName;
+        if (user == "Anonymous")
+        {
+            var navigationPanel = Project.Current.Get<NavigationPanel>("UI/MainWindow/NavigationPanel1");
+            navigationPanel.Enabled = false;
+        }
     }
 }
     
