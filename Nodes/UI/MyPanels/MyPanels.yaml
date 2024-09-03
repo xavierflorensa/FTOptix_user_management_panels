@@ -27,12 +27,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 90.0
+      Value: 130.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 50.0
+      Value: 70.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -42,7 +42,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 250.0
+      Value: 230.0
 - Name: PanelLogin
   Id: g=ddfbbcc091b53feb32feef0e8ba980d5
   Supertype: Panel_Template
@@ -68,6 +68,15 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 40.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
 - Name: PanelPLC
   Id: g=de256448d0a5bc4107c3ca6ecce42bb4
   Supertype: Panel_Template
@@ -93,6 +102,16 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 40.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 39.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
   - Name: Label2
     Type: Label
     Children:
@@ -100,7 +119,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"PLC Tag value"}
+      Value: {"LocaleId":"en-US","Text":"PLC Tag value:"}
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -138,7 +157,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 142.0
+      Value: 182.0
 - Name: PanelTrends
   Id: g=1b5e397ffc00b535ba38dbe6d6ade267
   Supertype: Panel_Template
@@ -164,6 +183,16 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 40.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 2.0
   - Name: Visible
     Type: BaseDataVariableType
     DataType: Boolean
@@ -267,7 +296,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 50.0
+      Value: 90.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 340.0
 - Name: PanelDatabase
   Id: g=fdb605387c88218d5d4cd882bde88317
   Supertype: Panel_Template
@@ -293,6 +327,15 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 40.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 43.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
   - Name: DataGrid1
     Type: DataGrid
     Children:
@@ -359,7 +402,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 200.0
+      Value: 290.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
